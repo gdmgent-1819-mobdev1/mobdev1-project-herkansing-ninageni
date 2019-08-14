@@ -1,0 +1,102 @@
+.hidden {
+    display: none;
+}
+
+body {
+}
+.registreren {
+    overflow: hidden;
+
+    background-image: url("../images/Naamloos-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+};
+
+.form_registreren {
+    background-color: #ffffff;
+    width: 100%;
+    padding-bottom: 50px;
+
+    input, select {
+        width: 90%;
+        padding : 10px 5px;
+        margin-bottom: 5px;
+        background-color: #B5D2CE;
+        border: none;
+        font-family: $content-font;
+    }
+
+}
+
+.radiobuttons {
+    display: inline-flex;
+
+    input[type=radio] {
+    float: right;
+    font-family: $content-font;
+
+    }
+}
+
+.link_registreren_aleenaccount {
+    font-family: $title-font;
+    display: inline-flex;
+    align-items: center;
+
+    p {
+        font-family: $content-font;
+    }
+
+    a {
+        color: #45757C;
+    }
+}
+
+.link_wachtwoordvergeten {
+    a {
+        font-family: $title-font;
+        color: #45757C;
+    }
+}
+
+h1{
+    font-family: $title-font;
+    font-weight: bold;
+    font-size: 50pt;
+}
+
+h2 {
+    font-family: $title-font;
+}
+
+.button_index{
+    a, input{
+        border: none;
+        font-family: $title-font;
+        font-weight: bold;
+        font-size: 25pt;
+        background-color: #E52030;
+        width:222px;
+        color: #E3EAEC;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        margin: 0 auto;
+        padding: 13px 0;
+    }
+}
+
+input, select {
+    width: 90%;
+    padding : 10px 5px;
+    margin-bottom: 5px;
+    background-color: #B5D2CE;
+    border: none;
+    font-family: $content-font;
+}
+
+

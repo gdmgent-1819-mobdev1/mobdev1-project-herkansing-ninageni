@@ -1,0 +1,51 @@
+{{> header }}
+<div class="body1">
+    <div class="image">
+        <img src="../../src/images/Unknown.jpg" alt="">
+    </div>
+    <div>
+        <div class="gegevens_profiel_voornaam">
+            <h2>{{ user.firstName }} {{ user.lastName }}</h2>
+        </div>
+    </div>
+    <div class="button_profiel_afmelden">
+        <button type="button" class="afmelden button">Afmelden</button>
+    </div>
+</div>
+<div class="body2">
+    <div class="titel_profiel_gegevens">
+        <h2 class="titel_profiel_gegevens">Gegevens:</h2> <br>
+    </div>
+    <div class="gegevens_profiel">
+        <div class="gegevens_profiel_voornaam profiel_property">
+            <p class="gegevens_profiel_voornaam">Voornaam:</p>
+            <p>{{ user.firstName }}</p>
+        </div>
+        <div class="gegevens_profiel_achternaam profiel_property">
+            <p class="gegevens_profiel_achternaam">Achternaam:</p>
+            <p>{{ user.lastName }}</p>
+        </div>
+        <div class="gegevens_profiel_adres profiel_property">
+            <p class="gegevens_profiel_adres">Adres:</p>
+            <p>{{ user.address }}</p>
+        </div>
+        <div class="gegevens_profiel_email profiel_property">
+            <p class="gegevens_profiel_email">Email:</p>
+            <p>{{ user.email }}</p>
+        </div>
+        <div class="gegevens_profiel_telefoonnummer profiel_property" >
+            <p class="gegevens_profiel_telefoonnummer">Telefoonnummer:</p>
+            <p>{{ user.phoneNumber }}</p>
+        </div>
+        {{#if student}}
+            <div class="gegevens_profiel_hogeschool profiel_property">
+                <p class="gegevens_profiel_hogeschool">Hogeschool:</p>
+                <p>{{ nameSchool }}</p>
+            </div>
+        {{/if}}
+    </div>
+    <div class="link_profiel_bewerken">
+        <a href="" class="link_text">Bewerken</a> 
+    </div>   
+</div>
+{{> footer }}

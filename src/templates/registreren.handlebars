@@ -1,0 +1,52 @@
+    <div class="registreren page">
+        <div class="form_registreren">
+            <form class="form_registreren">
+                   <h1>MyKot</h1>
+                <div class="form_registreren_voornaam">
+                    <input class="registreren_voornaam" type="text" placeholder="Voornaam"> <br>
+                </div>
+                <div class="form_registreren_achternaam">
+                    <input class="registreren_achternaam" type="text" placeholder="Achternaam"> <br>
+                </div>
+                <div class="form_registreren_adres">
+                    <input class="registreren_adres" type="text" placeholder="Adres"> <br>
+                </div>
+                <div class="form_registreren_email">
+                    <input class="registreren_email" type="email" placeholder="Email"> <br>
+                </div>
+                <div class="form_registreren_wachtwoord">
+                    <input class="registreren_wachtwoord" type="password" placeholder="Wachtwoord"> <br>
+                </div>
+                <div class="form_registreren_herhaalwachtwoord">
+                    <input class="registreren_herhaalwachtwoord" type="password" placeholder="Herhaal wachtwoord"> <br>
+                </div>
+                <div class="form_registreren_telefoonnummer">
+                    <input class="registreren_telefoonnummer" type="tel" placeholder="Telefoonnummer"> <br>
+                </div>
+                <div class="radiobuttons">
+                    <div class="form_registreren_student">
+                        <input class="registreren_radio" name="type" type="radio" value="Student">Student
+                    </div>
+                    <div class="form_registreren_kotbaas">
+                        <input class="registreren_radio" name="type" type="radio" value="Kotbaas">Kotbaas
+                    </div>
+                </div>
+                <div class="form_select_scholen hidden">
+                    <select class="select_scholen"> <br>
+                        <option disabled selected>Universiteit of hogeschool</option>
+                        {{#each schools}}
+                            <option value="{{this.key}}">{{this.name}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="button_index">
+                    <input type="submit" class="button_index" value="Registreren" >
+                </div>
+                <div class="link_registreren_aleenaccount">
+                    <p class="text">Al een account? </p><a href="/#/login" class="link_text" data-path>Log hier in!</a>
+                </div>
+            </form>
+        </div>
+     
+
+    </div> 

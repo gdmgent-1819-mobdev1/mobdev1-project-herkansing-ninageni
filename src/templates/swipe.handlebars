@@ -1,0 +1,86 @@
+{{> header}}
+<div class="">
+    <div class="body3">
+        <div class="titel_koten">
+            <h2 class="titel_koten">MySwipe</h2>
+        </div>
+        <div>
+            {{#if gevondenKoten}}
+            <div class="tinder">
+                <div class="image_price">
+                    <div class="image">
+                        <img src="../../src/images/Kot1.jpg" alt="">
+                    </div>
+                    <div class="price">
+                        <p>{{kot.price.rent}}</p>
+                    </div>
+                </div>
+                <div class="titel_detailkot_gegevens">
+                    <h2 class="titel_detailkot_gegevens">Gegevens:</h2>
+                </div>
+                <div class="gegevens_kot">
+                    <div class="gegevens_kot_type profiel_property">
+                        <p class="gegevens_kot_type_p">Type:</p>
+                        <p>{{kot.roominfo.type}}</p>
+                    </div>
+                    <div class="gegevens_kot_oppervlakte profiel_property">
+                        <p class="gegevens_kot_oppervlakte_p">Oppervlakte:</p>
+                        <p>{{kot.roominfo.surface}}</p>
+                    </div>
+                    <div class="gegevens_kot_verdieping profiel_property">
+                        <p class="gegevens_kot_verdieping_p">Verdieping:</p>
+                        <p>{{kot.roominfo.level}}</p>
+                    </div>
+                    <div class="gegevens_kot_aantalpersonen profiel_property">
+                        <p class="gegevens_kot_aantalpersonen_p">Aantal personen:</p>
+                        <p>{{kot.roominfo.persons}}</p>
+                    </div>
+                    <div class="gegevens_kot_toilet profiel_property">
+                        <p class="gegevens_kot_toilet_p">Toilet:</p>
+                        <p>{{kot.roominfo.toilet}}</p>
+                    </div>
+                    <div class="gegevens_kot_douche profiel_property">
+                        <p class="gegevens_kot_douche_p">Douche:</p>
+                        <p>{{kot.roominfo.shower}}</p>
+                    </div>
+                    <div class="gegevens_kot_bad profiel_property">
+                        <p class="gegevens_kot_bad_p">Bad:</p>
+                        <p>{{kot.roominfo.bath}}</p>
+                    </div>
+                    <div class="gegevens_kot_keuken profiel_property">
+                        <p class="gegevens_kot_keuken_p">Keuken:</p>
+                        <p>{{kot.roominfo.kitchen}}</p>
+                    </div>
+                    <div class="gegevens_kot_bemeubeld profiel_property">
+                        <p class="gegevens_kot_bemeubeld_p">Bemeubeld:</p>
+                        <p>{{kot.roominfo.furniture}}</p>
+                    </div>
+                    <div class="gegevens_kot_waarborg profiel_property">
+                        <p class="gegevens_kot_waarborg_p">Waarborg:</p>
+                        <p>{{kot.price.deposit}}</p>
+                    </div>
+                    <div class="gegevens_kot_adres profiel_property">
+                        <p class="gegevens_kot_adres_p">Adres:</p>
+                        <p>{{kot.address}}</p>
+                    </div>
+                    <div class="gegevens_kot_beschrijving profiel_property">
+                        <p class="gegevens_kot_beschrijving_p">Beschrijving:</p>
+                        <p>{{kot.roominfo.extra}}</p>
+                    </div>
+                    <div class="gegevens_kot_kotbaas profiel_property">
+                        <p class="gegevens_kot_kotbaas_p">Kotbaas:</p>
+                        <p>{{user.firstName}}{{user.lastName}}</p>
+                    </div>
+                </div>
+            </div>
+            {{/if}}
+
+        </div>
+
+        <div class="button_koten_swipe">
+            <i class="fas fa-star yes"></i>
+            <i class="fas fa-trash no"></i>
+        </div>
+    </div>
+</div>
+{{> footer}}

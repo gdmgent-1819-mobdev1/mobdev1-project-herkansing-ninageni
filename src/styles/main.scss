@@ -1,0 +1,28 @@
+@import "../../node_modules/mapbox-gl/dist/mapbox-gl.css";
+// Generic styling
+// general
+@import 
+    "./abstracts/colors",
+    "./abstracts/fonts.scss";
+
+@import 
+    "./base/core";
+
+@import 
+    "./layout/page",
+    "./layout/grid.scss";
+
+@import 
+    "./components/header",
+    "./components/footer";
+
+// pages
+@import
+    "./pages/about",
+    "./pages/detailkot",
+    "./pages/kot",
+    "./pages/profiel",
+    "./pages/toevoegen",
+    "./pages/registreren",
+    "./pages/home";
+

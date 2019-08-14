@@ -1,0 +1,43 @@
+body {
+}
+.home {
+    overflow: hidden;
+
+    background-image: url("../images/Naamloos-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+};
+
+.buttons_action {
+    background-color: #ffffff;
+    padding: 53px 0px;
+}
+h1{
+    font-family: $title-font;
+    font-weight: bold;
+    font-size: 50pt;
+}
+.button_index{
+    a{
+        font-family: $title-font;
+        font-weight: bold;
+        font-size: 25pt;
+        background-color: #E52030;
+        width:222px;
+        color: #E3EAEC;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        margin: 0 auto;
+        padding: 13px 0;
+    }
+}
+.of {
+    font-family: $title-font;
+    font-weight: bold;
+    font-size: 20pt;
+}
+

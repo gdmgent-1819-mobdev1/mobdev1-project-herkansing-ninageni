@@ -1,0 +1,64 @@
+body { overflow: auto }
+
+.body1 {
+    width: 100%;
+    background: #E3EAEC;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    align-items: center;
+    flex-direction: column;
+
+    .image {
+        margin: 0 auto;
+        border: 1px solid #1B232E;
+    }
+
+    .button_profiel_afmelden {
+        margin: 0 auto;
+
+        .button {
+            background: #7FB3B0;
+            padding: 10px 20px;
+            border: none;
+            color: #E3EAEC;
+            font-family: $title-font;
+        }
+    }
+}
+
+.body2 {
+    padding: 0 20px;
+    .profiel_property {
+        display: flex;
+        
+        font-family: $content-font;
+        justify-content: space-between;
+        text-align: left;
+
+        p {
+            text-align: left;
+
+        }
+    }
+
+    a {
+        font-family: $title-font;
+        color: #45757C;
+        text-decoration: none;
+    }
+}
+
+.profiel_property {
+    display: flex;
+    
+    font-family: $content-font;
+    justify-content: space-between;
+    text-align: left;
+
+    p {
+        text-align: left;
+
+    }
+}

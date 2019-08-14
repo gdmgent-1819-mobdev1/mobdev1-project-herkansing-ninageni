@@ -1,0 +1,46 @@
+{{> header}}
+<div class="">
+    <div class="body3">
+        <div class="titel_koten">
+            <h2 class="titel_koten">Koten</h2>
+        </div>
+        {{#if student}}
+            <div class="koten_nav">
+                <a href="#/koten/swipe" class="tinder-link link" data-path>MySwipe</a>
+                <a href="" class="list">Kaart</a>
+                <a href="#/koten" class="list" data-path>Lijst</a>
+            </div>
+        {{else}}
+            <div class="button_koten">
+                <a href="#/koten/toevoegen" class="button_kot">Nieuw</a>
+            </div>
+        {{/if}}
+        <div>
+            {{#if gevondenKoten}}
+            <div class="lijst">
+                {{#each koten}}
+                <div class="kader_kot" id="{{this.id}}">
+                    <a href="#/koten/{{this.id}}" class="kot_link">
+                        <div class="kot">
+                            <div class="kot_foto">
+                                <img src="../../src/images/Kot1.jpg" alt="fotokot">
+                            </div>
+                            <div class="content_kot">
+                                <p class="kader_address">{{this.address}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {{/each}}
+            </div>
+    
+
+            {{/if}}
+        </div>
+
+        <div class="button_koten">
+            <a class="button_kot" href="">Laad meer</a>
+        </div>
+    </div>
+</div>
+{{> footer}}

@@ -1,0 +1,61 @@
+.body5 {
+    padding: 0 20px;
+    padding-top: 100px;
+}
+
+.gegegevens_kot {
+    padding: 0 20px;
+}
+
+.image_price {
+    position: relative;
+    
+    .image {
+        img {
+            width: 100%;
+        }
+        
+
+    }
+
+    .price {
+        position: absolute;
+        bottom: 3px;
+        right: 0px;
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+
+    .sociale_media {
+        display: inline-flex;
+        font-size: 25px;
+
+        i{
+            margin-right: 15px;
+            color: #1B232E;
+        }
+    }
+    .font_awesome {
+        display: inline-flex;
+        font-size: 25px;
+        i{
+            margin-left: 15px;
+            color:#1B232E;
+
+            &.ster {
+                color: #E52030;
+            }
+        }
+    }
+}
+
+.link_detailkot_bewerken {
+    a {
+        font-family: $title-font;
+        color: #45757C;
+        text-decoration: none;
+    }
+}
